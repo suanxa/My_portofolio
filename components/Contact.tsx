@@ -1,7 +1,7 @@
 'use client'; // Wajib ada karena menggunakan fungsi klik interaktif
 
 import React from 'react';
-import { Mail, MessageCircle } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function Contact() {
   // Fungsi aman untuk Email (mencegah bot email harvester)
@@ -12,11 +12,11 @@ export default function Contact() {
     window.location.href = `mailto:${user}@${domain}`;
   };
 
-  // Fungsi aman untuk WhatsApp
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
+  // Fungsi aman untuk GitHub
+  const handleGitHubClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
     e.preventDefault();
-    const phone = "6288708240233"; // Format internasional tanpa tanda plus
-    window.open(`https://wa.me/${phone}`, '_blank');
+    const username = "suanxa"; // Sesuaikan jika username github Anda berbeda
+    window.open(`https://github.com/${username}`, '_blank');
   };
 
   // Fungsi aman untuk Instagram
@@ -43,15 +43,18 @@ export default function Contact() {
           Kirim Email
         </button>
         <button
-          onClick={handleWhatsAppClick}
-          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-all shadow-lg shadow-emerald-600/20 hover:scale-105 cursor-pointer"
+          onClick={handleGitHubClick}
+          className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-semibold transition-all shadow-lg shadow-zinc-800/20 hover:scale-105 cursor-pointer border border-zinc-700"
         >
-          <MessageCircle className="h-4 w-4" />
-          WhatsApp
+          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+          GitHub
         </button>
       </div>
 
-      {/* Kartu Detail Kontak & Media Sosial (Disamarkan untuk Keamanan Data) */}
+      {/* Kartu Detail Kontak & Media Sosial */}
       <div className="flex flex-wrap justify-center gap-4 text-zinc-300">
         
         {/* Email Terproteksi */}
@@ -86,14 +89,17 @@ export default function Contact() {
           <span>@suryaandexa</span>
         </a>
 
-        {/* WhatsApp Terproteksi */}
+        {/* GitHub */}
         <a 
-          href="#whatsapp" 
-          onClick={handleWhatsAppClick}
-          className="hover:text-emerald-400 transition-colors px-4 py-3 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 flex items-center gap-2.5 text-sm group cursor-pointer"
+          href="#github" 
+          onClick={handleGitHubClick}
+          className="hover:text-white transition-colors px-4 py-3 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-500/50 flex items-center gap-2.5 text-sm group cursor-pointer"
         >
-          <MessageCircle className="h-4 w-4 text-emerald-400 group-hover:scale-110 transition-transform" />
-          <span>+62 887-0824-xxxx (Klik untuk Chat)</span>
+          <svg className="h-4 w-4 text-zinc-300 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+          <span>surya langga andexa</span>
         </a>
 
       </div>
