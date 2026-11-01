@@ -1,4 +1,4 @@
-'use client'; // Wajib ada karena menggunakan state interaktif (useState)
+'use client'; 
 
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -11,31 +11,31 @@ export default function About() {
   // Daftar 7 sertifikat dengan nama file /sertif-X.png
   const certificatesList = [
     {
-      title: 'Database Foundation Certificate',
+      title: 'Database Foundation Award',
       issuer: 'Lembaga / Oracle',
       year: '2024',
       image: '/sertif-1.png',
     },
     {
-      title: 'Java Fundamentals Certificate',
+      title: 'Java Fundamentals Award',
       issuer: 'Lembaga / Oracle',
       year: '2024',
       image: '/sertif-2.png',
     },
     {
-      title: 'Java Programming Certificate',
+      title: 'Java Programming Award',
       issuer: 'Lembaga / Oracle',
       year: '2024',
       image: '/sertif-3.png',
     },
     {
-      title: 'Database Programming with SQL Certificate',
+      title: 'Database Programming with SQL Award',
       issuer: 'Lembaga / Platform D',
       year: '2024',
       image: '/sertif-4.png',
     },
     {
-      title: 'Red Hat Certified System Administrator',
+      title: 'Red Hat Certified System Administrator Course',
       issuer: 'Lembaga / Red Hat',
       year: '2024',
       image: '/sertif-5.png',
@@ -109,7 +109,7 @@ export default function About() {
             <Award className="h-5 w-5" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white tracking-tight">Sertifikasi & Lisensi</h3>
+            <h3 className="text-xl font-bold text-white tracking-tight">Sertifikasi dan Pelatihan</h3>
             <p className="text-xs text-zinc-400">Bukti keahlian dan pelatihan profesional yang pernah ditempuh (Klik gambar untuk memperbesar).</p>
           </div>
         </div>
