@@ -109,7 +109,7 @@ export default function About() {
             <Award className="h-5 w-5" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white tracking-tight">Sertifikasi dan Pelatihan</h3>
+            <h3 className="text-xl font-bold text-white tracking-tight">Sertifikat dan Pelatihan</h3>
             <p className="text-xs text-zinc-400">Bukti keahlian dan pelatihan profesional yang pernah ditempuh (Klik gambar untuk memperbesar).</p>
           </div>
         </div>
