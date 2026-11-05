@@ -14,6 +14,14 @@ export default function Skills() {
     { name: 'Figma', cat: 'UI/UX Design' },
     { name: 'Git & GitHub', cat: 'Version Control' },
     { name: 'REST API', cat: 'Integration' },
+    { name: 'IT Support', cat: 'Operations' },
+    { name: 'Data Entry', cat: 'Data Management' },
+    { name: 'System Integration', cat: 'Integration' },
+    { name: 'Hardware Maintenance', cat: 'Hardware' },
+    { name: 'System Administration', cat: 'Administration' },
+    { name: 'Network Configuration', cat: 'Network' },
+    { name: 'Photo & Videography', cat: 'Multimedia' },
+    { name: 'Travel Management', cat: 'Administrative Skills' }
   ];
 
   return (
