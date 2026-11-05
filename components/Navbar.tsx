@@ -10,6 +10,7 @@ export default function Navbar() {
         </span>
         <nav className="hidden sm:flex items-center gap-6 text-sm text-zinc-400 font-medium">
           <a href="#about" className="hover:text-white transition-colors">Tentang</a>
+          <a href="#experience" className="hover:text-white transition-colors">Pengalaman</a>
           <a href="#skills" className="hover:text-white transition-colors">Keahlian</a>
           <a href="#projects" className="hover:text-white transition-colors">Proyek</a>
           <a href="#contact" className="hover:text-white transition-colors">Kontak</a>
