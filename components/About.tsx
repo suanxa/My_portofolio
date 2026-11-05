@@ -43,7 +43,7 @@ export default function About() {
     {
       title: 'Magang Jogja Certificate',
       issuer: 'Lembaga / Seven Inc',
-      year: '2022',
+      year: '2026',
       image: '/sertif-6.png',
     },
     {
